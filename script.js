@@ -64,7 +64,7 @@ const DATA = {
       demo:  '#', repo: '#',
     },
     {
-      title: 'UBP Management System',     year: '2025', type: 'Web App',
+      title: 'Company Profile',     year: '2025', type: 'Web App',
       desc:  'Sistem manajemen untuk UBP: data inventory, laporan, dan analitik. Dashboard lengkap untuk monitoring.',
       tags:  ['HTML','Javascript','css'],
       image: 'img/ubp.png',
