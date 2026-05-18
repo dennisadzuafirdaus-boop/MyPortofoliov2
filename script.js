@@ -61,14 +61,14 @@ const DATA = {
       desc:  'Landing page ini untuk club neval yang di dalamnya ada penjelasan tentang dokumentasi latihan dan kontak untuk mendaftar club',
       tags:  ['React.Js','Bootstrap'],
       image: 'img/nevalvc.png',
-      demo:  '#', repo: '#',
+      demo:  'https://neval-vc.vercel.app/', repo: '#',
     },
     {
-      title: 'Company Profile',     year: '2025', type: 'Web App',
-      desc:  'Sistem manajemen untuk UBP: data inventory, laporan, dan analitik. Dashboard lengkap untuk monitoring.',
+      title: 'Company Profile', year: '2025', type: 'Web App',
+      desc:  'Sebuah landing page untuk melihat tentang kampus kita, jurusan apa saja yang paling top dan rekomended dan juga bisa ngelihat pekerjaan yang berhubungan dengan jurusan',
       tags:  ['HTML','Javascript','css'],
       image: 'img/ubp.png',
-      demo:  '#', repo: '#',
+      demo:  'https://ubp-bogor.vercel.app/', repo: '#',
     },
   ],
 
