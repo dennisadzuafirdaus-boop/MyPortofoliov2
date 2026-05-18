@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Portfolio Web Developer — Laravel, Vue.js, MySQL"/>
+<title>Portfolio — Web Developer</title>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AMBIENT BLOBS -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav">
+  <button class="close-btn" id="close-nav">✕</button>
+  <a href="#hero"     class="mnav-link">Home</a>
+  <a href="#about"    class="mnav-link">About</a>
+  <a href="#projects" class="mnav-link">Projects</a>
+  <a href="#skills"   class="mnav-link">Skills</a>
+  <a href="#contact"  class="mnav-link">Contact</a>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ Pesan terkirim! Saya akan segera menghubungi kamu.</div>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <div class="nav-logo" id="nav-logo">Dennis Adzua<span>.</span></div>
+      <div class="nav-links">
+        <a href="#hero"     class="nav-link" data-section="hero">Home</a>
+        <a href="#about"    class="nav-link" data-section="about">About</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#skills"   class="nav-link" data-section="skills">Skills</a>
+        <a href="#contact"  class="nav-link" data-section="contact">Contact</a>
+        <a href="#contact"  class="nav-link nav-cta">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT -->
+      <div>
+        <div class="hero-badge reveal">
+          <span class="pulse-dot"></span>
+          <span class="badge-txt" id="hero-badge-txt">Tersedia untuk Project Baru</span>
+        </div>
+        <h1 class="hero-name reveal">
+          Halo, Saya<br>
+          <span class="grad">Junior Web Developer.</span>
+        </h1>
+        <p class="hero-sub reveal" id="hero-sub">
+          Junior Web Developer spesialis Laravel.
+        </p>
+        <div class="stack-row reveal" id="stack-row">
+          <!-- pills injected by JS -->
+        </div>
+        <div class="actions reveal">
+          <a href="img/" class="btn-p" id="cv-btn" download>⬇ Download CV</a>
+          <a href="#contact" class="btn-o">📩 Hubungi Saya</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Code Card -->
+      <div class="hero-visual">
+        <div class="floating-badge fb-1">
+          <span class="fb-icon">🚀</span>
+          <div>
+            <div class="fb-name">Laravel</div>
+            <div class="fb-sub">Backend Framework</div>
+          </div>
+        </div>
+
+        <div class="code-card">
+          <div class="code-dots">
+            <span class="dot-r"></span>
+            <span class="dot-y"></span>
+            <span class="dot-g"></span>
+          </div>
+          <div id="code-lines"></div>
+          <span class="cursor"></span>
+        </div>
+
+        <div class="floating-badge fb-2">
+          <span class="fb-icon">⚡</span>
+          <div>
+            <div class="fb-name">React.JS</div>
+            <div class="fb-sub">Frontend Framework</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     STATS
+═══════════════════════════════════════ -->
+<div id="stats">
+  <div class="container">
+    <div class="stats-row" id="stats-row">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Photo -->
+      <div class="photo-wrap reveal-l">
+        <div class="photo-box">
+          <img src="img/fotoporto.jpg" alt="Dennis Adzua" class="avatar">
+          <div class="photo-name">Web Developer</div>
+          <div class="photo-role">Fullstack · Laravel · React.Js</div>
+        </div>
+        <!-- <div class="exp-badge">
+          <span class="exp-num" id="exp-num">1+</span>
+          <span class="exp-txt">Tahun Pengalaman</span>
+        </div> -->
+      </div>
+
+      <!-- Text -->
+      <div class="reveal-r">
+        <div class="section-label">Tentang Saya</div>
+        <h2 class="section-title">
+          Junior Web<span class="grad2">Developer</span>
+        </h2>
+        <p class="about-desc" id="about-desc">
+          Saya adalah fullstack web developer yang berfokus pada Laravel dan React.Js.
+        </p>
+        <div class="about-items" id="about-items">
+          <!-- injected by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-hdr reveal">
+      <div>
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Project <span class="grad">Pilihan</span></h2>
+      </div>
+      <a href="#" class="view-all">Lihat Semua →</a>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal">Tech Stack</div>
+    <h2 class="section-title reveal">Senjata <span class="grad">Andalan</span></h2>
+    <div class="skills-wrap" id="skills-wrap">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="reveal-l">
+        <div class="section-label">Kontak</div>
+        <h2 class="section-title">Mari <span class="grad">Berkolaborasi</span></h2>
+        <p class="contact-desc" id="contact-desc">
+          Butuh website profesional? Yuk konsultasi gratis!
+        </p>
+        <div class="cinfo-list">
+          <div class="cinfo-item">
+            <div class="cinfo-icon">📧</div>
+            <div>
+              <div class="cinfo-label">Email</div>
+              <div class="cinfo-val" id="contact-email">hello@devportfolio.id</div>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">📱</div>
+            <div>
+              <div class="cinfo-label">WhatsApp</div>
+              <div class="cinfo-val" id="contact-phone">+62 812-3456-7890</div>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">📍</div>
+            <div>
+              <div class="cinfo-label">Lokasi</div>
+              <div class="cinfo-val" id="contact-location">Indonesia</div>
+            </div>
+          </div>
+        </div>
+        <div class="socials" id="socials">
+          <!-- injected by JS -->
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-box reveal-r">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nama Lengkap</label>
+              <input class="form-input" name="name" placeholder="Nama kamu" type="text"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input class="form-input" name="email" placeholder="email@kamu.com" type="email"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Jenis Project</label>
+            <input class="form-input" name="project" placeholder="Misal: Dashboard Admin, E-commerce..." type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-textarea" name="message" placeholder="Ceritakan project kamu..."></textarea>
+          </div>
+          <div class="form-btns">
+            <button type="submit" class="btn-p">🚀 Konsultasi Gratis</button>
+            <a id="wa-btn" href="https://wa.me/6281234567890" class="btn-o" target="_blank">💬 WhatsApp</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer>
+  <div class="container" style="position:relative">
+    <button class="back-top" id="back-top" aria-label="Kembali ke atas">↑</button>
+    <div class="footer-inner">
+      <div class="footer-logo" id="footer-logo">DevPortfolio<span style="color:var(--a3)">.</span></div>
+      <div class="footer-copy">© 2026 — By : Dennis Adzua Firdaus</div>
+      <div class="footer-links">
+        <a href="#">Source Code</a>
+        <a href="#">Privacy</a>
+        <a href="#hero">Kembali ke Atas</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
