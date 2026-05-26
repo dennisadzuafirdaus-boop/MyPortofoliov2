@@ -239,28 +239,27 @@
 
       <!-- Form -->
       <div class="form-box reveal-r">
-        <form id="contact-form" novalidate>
+        <form  id="contact-form" onsubmit = sendmessage()>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Nama Lengkap</label>
-              <input class="form-input" name="name" placeholder="Nama kamu" type="text"/>
+              <input class="form-input" name="name"  id="name" placeholder="Nama kamu" type="text" required/>
             </div>
             <div class="form-group">
               <label class="form-label">Email</label>
-              <input class="form-input" name="email" placeholder="email@kamu.com" type="email"/>
+              <input class="form-input" name="email" id="email" placeholder="email@kamu.com" type="email" required/>
             </div>
           </div>
           <div class="form-group">
             <label class="form-label">Jenis Project</label>
-            <input class="form-input" name="project" placeholder="Misal: Dashboard Admin, E-commerce..." type="text"/>
+            <input class="form-input" name="project" id="project" placeholder="Misal: Dashboard Admin, E-commerce..." type="text" required/>
           </div>
           <div class="form-group">
             <label class="form-label">Pesan</label>
-            <textarea class="form-textarea" name="message" placeholder="Ceritakan project kamu..."></textarea>
+            <textarea class="form-textarea" name="message" id="message" placeholder="Ceritakan project kamu..." required></textarea>
           </div>
           <div class="form-btns">
             <button type="submit" class="btn-p">🚀 Konsultasi Gratis</button>
-            <a id="wa-btn" href="https://wa.me/6281234567890" class="btn-o" target="_blank">💬 WhatsApp</a>
           </div>
         </form>
       </div>

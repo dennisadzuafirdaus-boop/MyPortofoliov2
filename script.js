@@ -123,7 +123,6 @@ function buildPage() {
 
 /* ── NAV ── */
 function buildNav() {
-  const links = DATA.stack; // reuse for illustration; nav uses fixed links
   $('#nav-logo').textContent = DATA.name;
   // nav links already in HTML template; skip dynamic build
 }
@@ -353,6 +352,17 @@ function initForm() {
     setTimeout(() => toast.classList.remove('show'), 3500);
     form.reset();
   });
+}
+
+function sendMessage(){
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const project = document.getElementById('project').value;
+  const message = document.getElementById('message').value;
+
+  const url = "https://api.whatsapp.com/send?phone=6285810497177&text=Hai%20Kak%20Dennis%0ASaya%20*"+ name +"*%0AEmail%20saya%20*"+ email +"*%0ASaya%20mau%20konsultasi%20pembuatan%20website%20*"+ project +"*%0A%0A*"+ name +"*"
+
+  window.open(url);
 }
 
 /* ─────────────────────────────────────────
