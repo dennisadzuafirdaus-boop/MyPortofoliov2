@@ -339,14 +339,21 @@ function sendMessage() {
   const email = document.getElementById('email').value;
   const project = document.getElementById('project').value;
   const message = document.getElementById('message').value;
-  
-  const url = "https://api.whatsapp.com/send?phone=6285810497177&text=Hai%20Kak%20Dennis%0ASaya%20*"+ name +"*%0AEmail%20saya%20*"+ email +"*%0ASaya%20mau%20konsultasi%20pembuatan%20website%20*"+ project +"*%0A%0A*"+ name +"*"
-  
-  // show toast
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3500);
+
+  const text = `Hai Kak Dennis\nSaya *${name}*\nEmail saya *${email}*\nSaya mau konsultasi pembuatan website *${project}*\n\n*${message}*`;
+  const url = "https://api.whatsapp.com/send?phone=6285810497177&text=" + encodeURIComponent(text);
+
+  // Ambil elemen dulu sebelum dipakai
+  const toast = document.getElementById('toast');
+  const form = document.getElementById('contact-form');
+
+  if (toast) {
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  }
+
   form.reset();
-window.open(url);
+  window.open(url, '_blank');
 }
 
 
