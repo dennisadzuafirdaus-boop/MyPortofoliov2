@@ -334,7 +334,9 @@ function initTypewriter() {
 /* ─────────────────────────────────────────
    CONTACT FORM
 ───────────────────────────────────────── */
-function sendMessage() {
+function sendMessage(event) {
+  event.preventDefault(); // ← ini yang cegah data masuk ke URL
+
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const project = document.getElementById('project').value;
@@ -343,7 +345,6 @@ function sendMessage() {
   const text = `Hai Kak Dennis\nSaya *${name}*\nEmail saya *${email}*\nSaya mau konsultasi pembuatan website *${project}*\n\n*${message}*`;
   const url = "https://api.whatsapp.com/send?phone=6285810497177&text=" + encodeURIComponent(text);
 
-  // Ambil elemen dulu sebelum dipakai
   const toast = document.getElementById('toast');
   const form = document.getElementById('contact-form');
 
